@@ -61,6 +61,11 @@ You can explore a sample solution for this problem at:
 <pre>
 <a href="<?= $json->solution ?>" target="_blank"><?= $json->solution ?></a>
 </pre>
+<p>
+You also can play Rock, Paper, Scissors with players all around the world at 
+<a href="https://www.mmorps.com/" target="_blank">
+https://www.mmorps.com/</a>.
+</p>
 <?php } ?>
 <h2>Specifications</h2>
 <a href="01-RPS-Index.png" target="_blank">
