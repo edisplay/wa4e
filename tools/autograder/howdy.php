@@ -4,7 +4,7 @@ require_once "webauto.php";
 
 line_out("Grading WA4E Assignment 2");
 
-titleNote();
+howdyNote();
 
 $url = getUrl('http://csevumich.byethost18.com/howdy.php');
 if ( $url === false ) return;

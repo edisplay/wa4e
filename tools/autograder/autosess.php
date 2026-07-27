@@ -9,6 +9,7 @@ line_out("Grading WA4E Autos Post-Redirect");
 <p>The specification for this assignment is:
 <a href="http://www.wa4e.com/assn/autosess/" target="_blank">http://www.wa4e.com/assn/autosess/</a></p>
 <?php
+titleNote();
 
 $grade = 0;
 $passed = 0;

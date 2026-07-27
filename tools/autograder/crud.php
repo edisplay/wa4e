@@ -7,6 +7,8 @@ shuffle($WORDS);
 
 line_out("Grading WA4E CRUD");
 
+titleNote();
+
 $url = getUrl($reference_implementation);
 if ( $url === false ) return;
 $grade = 0;

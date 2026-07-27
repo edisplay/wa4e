@@ -141,6 +141,20 @@ function titleNote() {
     nameNote(true);
 }
 
+function howdyNote() {
+    global $USER;
+?>
+<p>
+To receive a grade for this assignment, your page must include an
+&lt;h1&gt; tag that contains the word <strong>Hello</strong>
+<?php if ( $USER->displayname && strlen($USER->displayname) > 0 ) { ?>
+and your name <strong><?= htmlentities($USER->displayname) ?></strong>
+<?php } ?>
+.
+</p>
+<?php
+}
+
 function nameNote($title=false) {
     global $USER, $LINK, $CONTEXT;
     global $check;
