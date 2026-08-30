@@ -1,4 +1,8 @@
 <?php
+if ( ! isset($OUTPUT) || ! is_object($OUTPUT) ) {
+    http_response_code(404);
+    exit;
+}
 
 $foot = '
 <p style="font-size: 0.875rem; color: #333; margin-top: 5em;">

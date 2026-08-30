@@ -1,4 +1,8 @@
 <?php
+if ( ! isset($CFG) ) {
+    http_response_code(404);
+    exit;
+}
 
 $CFG->context_title = "Web Applications for Everybody";
 $CFG->tool_folders = array("admin", "../tools", "../mod", "tool");
