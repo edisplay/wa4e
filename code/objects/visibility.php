@@ -27,7 +27,8 @@ class MyClass2 extends MyClass
     {
         echo $this->pub."\n";
         echo $this->pro."\n";
-        echo $this->priv."\n"; // Undefined
+        // Private is not visible here; reading it warns on PHP 8+.
+        echo (isset($this->priv) ? $this->priv : 'Undefined')."\n";
     }
 }
 
